@@ -1,17 +1,6 @@
 {
     "businesses": [
-        {
-            "name": "2 Minute Mug Cake",
-            "type": "Easy",
-            "ingredients": {
-                "one": "almond flour",
-                "two": "maple syrup",
-                "three": "vanilla",
-                "four": "baking powder"
-            },
-            "website": "https://www.broadwaybounddancemelbourne.com/",
-            "logo": "images/directory/broadway.jpg"
-        },
+     
         { 
             "name": "Fifth Avenue Art Gallery", 
             "type": "Arts, Culture & Entertainment",
