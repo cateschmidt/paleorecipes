@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta
+      name="description"
+      content="Chamber Contact Page for the WDD230 
+    course at Brigham Young University - Idaho for Caitlyn Schmidt."
+    >
+    <title>Chamber Contact Page Caitlyn Schmidt</title>
+    <link href="https://fonts.googleapis.com/css?family=Kavoon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mulish" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css" >
+    <link rel="stylesheet" href="styles/base.css" >
+    <link rel="stylesheet" href="styles/medium.css" >
+    <link rel="stylesheet" href="styles/large.css" >
+    <link rel="icon" href="favicon.ico" >
+  </head>
+  <body>
+    <header>
+      <p class="banner">
+        🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+      </p>
+      <img
+        class="logo"
+        src="images/transparentlogo.webp"
+        alt="Melbourne Chamber Logo"
+      >
+      <div class="title">
+        <h1 class="title-h1">Melbourne</h1>
+        <h2>Chamber of Commerce</h2>
+      </div>
+
+      <nav>
+        <div>
+          <a class="socialnav" href="https://instagram.com" target="_blank"
+            ><img class="icons" src="images/instagram.png" alt="instagram icon"
+          ></a>
+
+          <a class="socialnav" href="https://twitter.com" target="_blank"
+            ><img class="icons" src="images/twitter.png" alt="twitter icon"
+          ></a>
+        </div>
+        <ul class="navigation">
+          <li><a id="menu" href="#">.</a></li>
+          <li><a href="../chamber/index.html">Home</a></li>
+          <li><a href="../chamber/discover.html">Discover</a></li>
+          <li><a href="../chamber/directory.html">Directory</a></li>
+          <li><a href="../chamber/join.html">Join</a></li>
+          <li><a href="../chamber/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="date"></div>
+    </header>
+
+    <main class="contactform">
+      <section class="chamber-info">
+        <h2>Melbourne Chamber of Commerce</h2>
+        <h3>99 Imaginary Rd.<br>Melbourne, Fl 64325</h3>
+        <h3>Phone: (321) 707-5466</h3>
+        <h3>Email: info@melbournechamber.org</h3>
+        <!-- Map -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14080.830307034055!2d-80.6045585!3d28.0792105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88de118e7dbc9477%3A0x4a72e5960680a287!2sMelbourne%20Regional%20Chamber!5e0!3m2!1sen!2sus!4v1679369370153!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+      <h1 class="joinh1">Contact Us!</h1>
+      <br>
+      <form class="form-content" method="get" action="../chamber/contactsubmission.html">
+        <fieldset>
+          <legend>Please Fill Out The Form:</legend>
+          <label class="user-info"
+            >First Name * <input type="text" name="fname" required
+          ></label>
+          <label class="user-info"
+            >Last Name * <input type="text" name="lname" required
+          ></label>
+          <label class="user-info"
+            >Phone <input type="tel" name="phone" placeholder="1234567890"
+          ></label>
+          <label class="user-info"
+            >Email *
+            <input
+              type="email"
+              name="email"
+              placeholder="someone@gmail.com"
+              required
+          ></label>
+          <label class="business">Message<br><textarea placeholder="Enter a message here" required></textarea></label>
+        </fieldset>
+
+        
+        <label id="hidden">
+          <input type="hidden" id="submissionTime" name="submissionTime" >
+      </label>
+
+        <input type="submit" value="Submit Inquiry" class="submitButton" >
+       
+      </form>
+      <br>
+    </main>
+
+    <footer>
+      <img
+        class="footer-logo"
+        src="images/transparentlogo.webp"
+        alt="Melbourne Chamber Logo"
+      >
+      <div class="title-address">
+        <h2>Melbourne Chamber of Commerce</h2>
+        <h3>99 imaginary rd.<br>Melbourne, Fl 64325</h3>
+      </div>
+      <div class="epl">
+        <h3>info@melbournechamber.org</h3>
+        <h3>(321) 707-5466</h3>
+        <h3>📌Location <a href="https://goo.gl/maps/UF2NE1tvep5TV8G86">Map</a></h3>
+      </div>
+      <br >
+
+      <p class="base-footer">
+        &copy; <span id="year"></span> Melbourne Chamber | Caitlyn Schmidt| WDD
+        230 Project
+      </p>
+      <br >
+      <p class="last-updated">Last Updated: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/javascript.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/fulldate.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/hidden.js"></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta
+      name="description"
+      content="Homepage for the WDD330 Final Project
+    course at Brigham Young University - Idaho for Caitlyn Schmidt."
+    >
+    <title>Paleo f(x) Homepage Caitlyn Schmidt</title>
+    <link href="https://fonts.googleapis.com/css?family=Kavoon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mulish" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/normalize.css" >
+    <link rel="stylesheet" href="styles/base.css" >
+    <link rel="stylesheet" href="styles/medium.css" >
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
+    <header>
+      <p class="banner">
+        🤝🏼 Come join us for our weekly the meal planning course Wednesday at 7:00 p.m.
+      </p>
+      <img
+        class="logo"
+        src="images/logo.png"
+        alt="Paleo f(x) Logo"
+      >
+      <nav>
+        <div>
+          <a class="socialnav" href="https://instagram.com" target="_blank"
+            ><img class="icons" src="images/instagram.png" alt="instagram icon"
+          ></a>
+
+          <a class="socialnav" href="https://twitter.com" target="_blank"
+            ><img class="icons" src="images/twitter.png" alt="twitter icon"
+          ></a>
+        </div>
+        <ul class="navigation">
+          <li><a id="menu" href="#">.</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../recipebox.html">My Recipes</a></li>
+          <li><a href="../addrecipe.html">Add a Recipe</a></li>
+          <li><a href="../search.html">Recipe Search</a></li>
+        </ul>
+      </nav>
+      <div class="date"></div>
+    </header>
+    <main class="grid-container">
+      <section class="hero">
+        <h3>Paleo Simplified</h3>
+        <div class="hero-join">
+          <div class="container">
+            <input type="button" 
+            onclick="window.location.href='../addrecipe.html';" 
+            class="btn" value="Add a Recipe">          </div>
+
+
+        </div>
+      </section>
+      <section class="weather">
+        <h3>Weather</h3>
+        <div class="info"></div>
+        <p> The current weather in Austin Texas is...</p>
+        <figure>
+          <img src="null" alt="weather icon from weather API" id="weather-icon" >
+          <figcaption></figcaption>
+        </figure>
+          <div class="weather-calc">
+            <p> <span id="current-temp"></span> &deg;F </p>
+            <hr >
+            <p>Wind:<span id="wind"></span> MPH</p>
+            <p>Wind Chill: <span id="windchill"></span></p>
+          </div>
+      </section>
+      <section class="join">
+        <h3>What is Paleo f(x)?</h3>
+          <div class="join-button">
+            <input type="button" 
+            onclick="window.location.href='../addrecipe.html';" 
+            class="btn" value="Add a new recipe!">          </div>
+       
+        <p>
+          Paleo f(x) is an easy to use directory for all of your favorite Paleo recipes. Use the link 
+          below to discover new recipes and add them to your recipe box. Happy hunting! 
+        </p>
+      </section>
+      </section>
+    </main>
+
+    <footer>
+      <img
+        class="footer-logo"
+        src="images/logo.png"
+        alt="Paleo f(x) Logo"
+      >
+      <div class="title-address">
+        <h2>Paleo f(x)</h2>
+        <h3>510 E St. Elmo Rd. A3 <br>Austin, TX 78745</h3>
+      </div>
+      <div class="epl">
+        <h3>info@paleofx.org</h3>
+        <h3>(321) 707-5466</h3>
+        <h3>📌Location <a href="https://goo.gl/maps/z9wGrj6DjYhdQHWi8">Map</a></h3>
+      </div>
+      <br >
+
+      <p class="base-footer">
+        &copy; <span id="year"></span> Paleo f(x) | Caitlyn Schmidt| WDD
+        330 Project
+      </p>
+      <br >
+      <p class="last-updated">Last Updated: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/javascript.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/fulldate.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/weatherapi.js"></script>
+    
+    
+  </body>
+</html>

@@ -1,0 +1,695 @@
+html {
+    background-color: lightcyan;
+}
+
+/* *********************************************** */
+/* Header styling */
+header {
+    background-color: #003056;
+    color: white;
+}
+.logo { 
+    display: block;
+    margin: auto;
+    width: 99%;
+
+}
+.title {
+ display: none;
+}
+.title-h1 {
+  color: white;
+}
+.icons {
+    width: 40px;
+    float: right;
+    margin-right: 20px;
+}
+
+
+nav {
+	margin: 0 auto;
+	max-width:760px;
+	background-color: #003056;
+}
+.navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+    width: 50px;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+  font-family: 'mulish';
+}
+#menu::before {
+	content: "≡";
+	font-size: 2rem;
+}
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: #47D9BF;
+    width: 150px;
+}
+.responsive li {
+	display: block;
+}
+.responsive #menu::before {
+	content: "X";
+}
+.date {
+    margin: auto;
+    background-color: #00A1D9;
+    color:#003056;
+    height: 30px;
+    text-align: center;
+    font-size: 1.5em;
+    width: 95%;
+    padding: 10px 10px;
+    font-family:'kavoon';
+
+}
+.banner {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    color:#F2D03B;
+    font-family:'mulish';
+    font-size: 1rem;
+}
+
+/* *********************************************** */
+/* Main styling */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+    grid-gap: 15px;
+
+}
+
+.grid-container section {
+    background-color: lightgray;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #003056; 
+}
+h3 {
+    padding: 10px;
+    margin: auto;
+    font-family: 'kavoon';
+    font-size: 25px;
+    
+}
+.grid-container section p {
+   margin: 10px;
+   font-family:'mulish';
+   
+}
+.join {
+    display: none;
+    height: 300px;
+}
+
+.weather-calc {
+    grid-column: 2/3;
+    margin-top: -30px;
+}
+.hero {
+    height: 300px;
+    position: relative;
+    background-image: url(../images/joinphoto.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.hero h3 {
+    position: absolute;
+    font-size: 40px;
+}
+
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #00A1D9;
+    color: #003056;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-family:'kavoon';
+  }
+
+  .container .btn:hover {
+    background-color: #47D9BF;
+  }
+.event {
+    height: 300px;
+}
+
+.spotlights {
+    background-color: white;
+    height: 605px;
+}
+.spotlight1 {
+    border:1px solid #003056; 
+    height: 295px;  
+}
+.transportimage {
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+.spotlight2 {
+    border: 1px solid #003056;
+    height: 295px;
+}
+.tykesimage {
+    width: 40%;
+    display:block;
+    margin: auto;
+}
+.news {
+  height: 300px;
+}
+.spotlight3 {
+    display: none;
+    border: 1px solid #003056;
+}
+.weather {
+  height: 300px;
+}
+.weather info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+#current-temp {
+  display: block;
+  margin: auto;
+  
+}
+
+
+
+
+/* *********************************************** */
+/* Footer styling */
+footer {
+    background-color: #003056;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    overflow-wrap: break-word;
+}
+
+footer img {
+    display: block;
+    margin: auto;
+    width:99%;
+}
+footer p {
+  font-size: 1rem;
+}
+
+.title-address h2 {
+  font-family:'kavoon';
+}
+.title-address h3 {
+  font-family:'mulish';
+}
+.base-footer {
+  font-family:'mulish';
+}
+.base-footer p {
+    line-height: 0.25px;
+    margin: 10px;
+    font-family:'Mulish';
+    overflow-wrap:break-word;
+}
+.last-updated {
+  font-family:'mulish';
+}
+.epl h3 {
+  font-family:'mulish';
+  overflow-wrap: break-word;
+}
+.epl a {
+  color: #F2D03B;
+  text-decoration: none;
+}
+
+
+/* **************************************************** */
+/* Discovery Page Styling */
+
+.discovery-grid {
+    padding: 10px 20px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    color: #003056;
+    
+  }
+  .discovery-grid section {
+    padding: 10px 10px;
+    box-shadow: 4px 3px 17px #003056  ; 
+	-webkit-box-shadow: 4px 3px 17px #003056  ; 
+	-moz-box-shadow: 4px 3px 17px #003056  ; 
+    background-color: lightgray;
+    border: 0.5px solid #003056;
+    
+  }
+  .discovery-grid h2 {
+    font-family:'kavoon';
+  }
+  .discovery-grid p {
+    font-family:'mulish';
+  }
+  .culture{
+    padding: 0px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .cultureimage {
+    width: 80%;
+    border: solid 2px #003056;
+    border-radius: 20px;
+    margin: auto;
+    filter: blur(0);
+    transition: filter 1s;
+  }
+  img[data-src] {
+    filter: blur(0.25em);
+  }
+  .beaches{
+    padding: 0px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .beachimage {
+    width: 80%;
+    border: solid 2px #003056;
+    border-radius: 20px;
+    margin: auto;
+    filter: blur(0);
+    transition: filter 1s;
+  }
+  .tours{
+    padding: 0px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .tourimage {
+    width: 80%;
+    border: solid 2px #003056;
+    border-radius: 20px;
+    margin: auto;
+    filter: blur(0);
+    transition: filter 1s;
+  }
+  .stays{
+    padding: 0px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .staysimage {
+    width: 80%;
+    border: solid 2px #003056;
+    border-radius: 20px;
+    margin: auto;
+    filter: blur(0);
+    transition: filter 1s;
+  }
+  .dining{
+    padding: 0px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .diningimage {
+    width: 80%;
+    border: solid 2px #003056;
+    border-radius: 20px;
+    margin: auto;
+    filter: blur(0);
+    transition: filter 1s;
+  }
+  
+  .lastvisited {
+    width: 250px;
+    border-radius: 5px;
+    font-family: "ubuntu";
+    color: #003056;
+    
+  }
+  
+  /* **************************************************** */
+/* Join Page Styling */
+.joinh1 {
+  margin: auto;
+  color: #003056  ;
+  text-align: center;
+  width: 75%;
+  border-radius: 0.5rem;
+  padding: 0px;
+  font-family:'kavoon';
+}
+
+.congrats {
+  color: #003056;
+  padding: 20px 20px;
+  font-size: 1.5rem;
+  margin: auto;
+  font-family:'kavoon';
+  
+  
+}
+.thanks-content p {
+  padding: 70px 10px; 
+  font-size: 1.5rem;
+  margin: auto;
+  font-family:'mulish';
+  
+}
+
+form fieldset {
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 10px;
+  background-color: lightgray;
+  width: 50%;
+  font-family:'mulish';
+}
+form legend {
+  color: #003056;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
+  font-family:'mulish';
+}
+form label.user-info, form label.business, form div  {
+  display: block;
+  padding-top: 1rem;
+  color: #003056;
+}
+form label.user-info input, form label.business input{
+  display: block;
+  font-size: 1rem;
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 0.75rem 0;
+  color: #00A1D9;
+  width: 20rem;
+  
+
+}
+form label.member {
+  display: block;
+  padding: 0.75rem 0;
+  color: #003056;
+}
+form input.submitButton {
+  display: block;
+  margin: auto;
+  border: none;
+  background-color: lightgrey;
+  border: 1px solid black;
+  color: #003056;
+  border-radius: 0.5rem;
+  margin-top: 20px;
+  padding: 0.75rem 1.5rem;
+  width: 60%;
+  max-width: 20rem;
+  font-size: 0.90rem;
+  font-family:'mulish';
+}
+form label.user-info input:required {
+  border-left: red solid 6px;
+}
+form label.user-info input:required:valid {
+  border-left: green solid 6px;
+}
+form label.business input:required {
+  border-left: red solid 6px;
+}
+form label.business input:required:valid {
+  border-left: green solid 6px;
+}
+
+.joinform section {
+  margin: auto 30px;
+  border: solid 1px black;
+  border-radius: 10px;  
+  
+}
+.memberbenefit {
+  background-color: lightgray;
+  width: 80%;
+  font-family:'mulish';
+}
+.memberbenefit div {
+  margin: 10px 10px;
+  padding: 20px 20px;
+  border: solid 1px #00A1D9;
+}
+form label.business textarea {
+  width: 95%; 
+  height: 3rem;
+}
+  
+/* *************************************** */
+/* Directory Page styling */
+.directory #content {
+  margin: auto;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.cards section {
+  border: 2px solid #003056;
+  background-color: lightgray;
+  padding: 25px;
+  text-align: center;
+  height: 350px;
+  width: 250px;
+  margin: 20px;
+}
+
+.directory h2, h1 {
+  color: #003056;
+  text-align: center;
+  font-family:'kavoon';
+}
+.directory .cards img {
+  width: 40%;
+  height: auto;
+}
+
+.directory a {
+  text-decoration: none;
+  color: #003056;
+  font-family:'mulish';
+}
+
+.directory p:first-of-type {
+  font-style: italic;
+  font-size: 0.75em;
+}
+.directory p {
+  font-family:'mulish';
+}
+
+.directory .directory-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.directory-icons button {
+  background-color: white;
+  border: 1px solid #003056;   
+
+}
+
+.directory-icons button:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.directory-icons img {
+  width: 50px;
+}
+
+.directory table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: auto;
+  overflow: hidden;
+  font-family:'mulish';
+}
+
+.directory td {
+  padding: 10px;
+}
+
+tr:nth-child(odd) {
+  background-color: #e5e5e5;
+}
+
+tr td {
+  display: block;
+}
+
+.wireframes a {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border: 1px solid #003056; 
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 130px;
+
+}
+
+.wireframes a:hover {
+  background-color: lightgray;
+  cursor: pointer;
+  
+}
+
+/* Contact Page Styling */
+.chamber-info {
+  color: #003056; 
+  border: 1px solid black;
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: block;
+  overflow-wrap:break-word;
+  
+}
+.chamber-info h3 {
+  font-family:'mulish';
+}
+.chamber-info h2 {
+  font-family:'kavoon';
+}
+.chamber-info iframe {
+  max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

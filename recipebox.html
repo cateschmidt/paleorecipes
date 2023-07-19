@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta
+      name="description"
+      content="Chamber Homepage for the WDD230 
+    course at Brigham Young University - Idaho for Caitlyn Schmidt."
+    >
+    <title>Chamber Homepage Caitlyn Schmidt</title>
+    <link href="https://fonts.googleapis.com/css?family=Kavoon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mulish" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css" >
+    <link rel="stylesheet" href="styles/base.css" >
+    <link rel="stylesheet" href="styles/medium.css" >
+    <link rel="stylesheet" href="styles/large.css" >
+    <link rel="icon" href="favicon.ico" >
+  </head>
+  <body>
+    <header>
+      <p class="banner">
+        🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+      </p>
+      <img
+        class="logo"
+        src="images/transparentlogo.webp"
+        alt="Melbourne Chamber Logo"
+      >
+      <div class="title">
+        <h1 class="title-h1">Melbourne</h1>
+        <h2>Chamber of Commerce</h2>
+      </div>
+
+      <nav>
+        <div>
+          <a class="socialnav" href="https://instagram.com" target="_blank"
+            ><img class="icons" src="images/instagram.png" alt="instagram icon"
+          ></a>
+
+          <a class="socialnav" href="https://twitter.com" target="_blank"
+            ><img class="icons" src="images/twitter.png" alt="twitter icon"
+          ></a>
+        </div>
+        <ul class="navigation">
+          <li><a id="menu" href="#">.</a></li>
+          <li><a href="../chamber/index.html">Home</a></li>
+          <li><a href="../chamber/discover.html">Discover</a></li>
+          <li><a href="../chamber/directory.html">Directory</a></li>
+          <li><a href="../chamber/join.html">Join</a></li>
+          <li><a href="../chamber/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="date"></div>
+    </header>
+
+    <main class="directory">
+      <div class="directory-icons">
+        <button id="grid">
+          <img src="images/directory/grid.svg" alt="Grid View" >
+        </button>
+        <button id="list">
+          <img src="images/directory/list.svg" alt="List View" >
+        </button>
+      </div>
+
+      <div class="displayItems">
+        <div class="cards"></div>
+        <table class="table"></table>
+      </div>
+    </main>
+
+    <footer>
+      <img
+        class="footer-logo"
+        src="images/transparentlogo.webp"
+        alt="Melbourne Chamber Logo"
+      >
+      <div class="title-address">
+        <h2>Melbourne Chamber of Commerce</h2>
+        <h3>99 imaginary rd.<br>Melbourne, Fl 64325</h3>
+      </div>
+      <div class="epl">
+        <h3>info@melbournechamber.org</h3>
+        <h3>(321) 707-5466</h3>
+        <h3>📌Location <a href="https://goo.gl/maps/UF2NE1tvep5TV8G86">Map</a></h3>
+      </div>
+      <br >
+
+      <p class="base-footer">
+        &copy; <span id="year"></span> Melbourne Chamber | Caitlyn Schmidt| WDD
+        230 Project
+      </p>
+      <br >
+      <p class="last-updated">Last Updated: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/javascript.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/fulldate.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/directory.js"></script>
+    
+  </body>
+</html>
