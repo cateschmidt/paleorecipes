@@ -6,34 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta
       name="description"
-      content="Chamber Homepage for the WDD230 
+      content="Homepage for the WDD330 Final Project
     course at Brigham Young University - Idaho for Caitlyn Schmidt."
     >
-    <title>Chamber Homepage Caitlyn Schmidt</title>
+    <title>Paleo f(x) Homepage Caitlyn Schmidt</title>
     <link href="https://fonts.googleapis.com/css?family=Kavoon" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mulish" rel="stylesheet">
-    
+
+
     <link rel="stylesheet" href="styles/normalize.css" >
     <link rel="stylesheet" href="styles/base.css" >
     <link rel="stylesheet" href="styles/medium.css" >
-    <link rel="stylesheet" href="styles/large.css" >
-    <link rel="icon" href="favicon.ico" >
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="favicon.ico">
   </head>
   <body>
     <header>
       <p class="banner">
-        🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+        🤝🏼 Come join us for our weekly the meal planning course Wednesday at 7:00 p.m.
       </p>
       <img
         class="logo"
-        src="images/transparentlogo.webp"
-        alt="Melbourne Chamber Logo"
+        src="images/logo.png"
+        alt="Paleo f(x) Logo"
       >
-      <div class="title">
-        <h1 class="title-h1">Melbourne</h1>
-        <h2>Chamber of Commerce</h2>
-      </div>
-
       <nav>
         <div>
           <a class="socialnav" href="https://instagram.com" target="_blank"
@@ -46,163 +42,101 @@
         </div>
         <ul class="navigation">
           <li><a id="menu" href="#">.</a></li>
-          <li><a href="../chamber/index.html">Home</a></li>
-          <li><a href="../chamber/discover.html">Discover</a></li>
-          <li><a href="../chamber/directory.html">Directory</a></li>
-          <li><a href="../chamber/join.html">Join</a></li>
-          <li><a href="../chamber/contact.html">Contact</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../recipebox.html">My Recipes</a></li>
+          <li><a href="../addrecipe.html">Add a Recipe</a></li>
+          <li><a href="../search.html">Recipe Search</a></li>
         </ul>
       </nav>
       <div class="date"></div>
     </header>
 
-    <main class="joinform">
-      <h1 class="joinh1">Join the Chamber</h1>
-      <br>
-      <br>
-      <form class="form-content" method="get" action="thankyou.html">
-        <fieldset>
-          <legend>Applicant Information</legend>
-          <label class="user-info"
-            >First Name * <input type="text" name="fname" required
-          ></label>
-          <label class="user-info"
-            >Last Name * <input type="text" name="lname" required
-          ></label>
-          <label class="user-info"
-            >Phone <input type="tel" name="phone" placeholder="1234567890"
-          ></label>
-          <label class="user-info"
-            >Email *
-            <input
-              type="email"
-              name="email"
-              placeholder="someone@gmail.com"
-              required
-          ></label>
-          <label class="user-info"
-            >Website <input type="url" name="url" placeholder="http://"
-          ></label>
-        </fieldset>
-
-        <fieldset>
-          <legend>Business Information</legend>
-          <label class="business"
-            >Business Position/Title
-            <input
-              type="text"
-              name="bposition"
-              pattern="[A-Za-z0-9\-]{7,}"
-              title="Position must be alpha characters, hyphens, and spaces with a minimum of seven characters"
-              required
-          ></label>
-          <label class="business"
-            >Business Name * <input type="text" name="bname" required
-          ></label>
-          <label class="business">Business description:<br><textarea ></textarea></label>
-        </fieldset>
-
-        <fieldset>
-          <legend>Membership Information</legend>
-          <div>Membership Levels</div>
-          <label class="member"
-            ><input
-              type="radio"
-              name="membership1"
-              value="Non-Profit"
-            >Non-Profit</label
-          >
-          <label class="member"
-            ><input
-              type="radio"
-              name="membership2"
-              value="Bronze"
-            >Bronze</label
-          >
-          <label class="member"
-            ><input
-              type="radio"
-              name="membership3"
-              value="Silver"
-            >Silver</label
-          >
-          <label class="member"
-            ><input type="radio" name="membership4" value="Gold" >Gold</label
-          >
-        </fieldset>
-        <label id="hidden">.
-          <input type="hidden" id="submissionTime" name="submissionTime" >
-      </label>
-
-        <input type="submit" value="Join the Chamber" class="submitButton" >
-       
+    <!-- <main class="fresh-main">
+      <h2>Add Your Recipe!</h2>
+      <form id="drink-form">
+          <fieldset>
+              <legend> Recipe Details</legend>
+              <label class="top">Recipe Name*: <input id="name" type="text" required></label>
+              <label class="top">Website*: <input id="url" type="url" placeholder="www.example.com" required></label>
+              <label class="top">Image*: <input id="image" type="text" value="/images/placeholder.png" name="image" required></label>
+          </fieldset>
+          <fieldset>
+              <h2>Select your Ingredients</h2>
+              <legend>Ingredients</legend>
+              <label for = "fruit-select-1"> Ingredient #1</label>
+                  <select id="fruit-select-1" name = "fruit">
+                      <option value="">Select One</option>
+                  </select> <br>
+              <label for= "fruit-select-2"> Ingredient #2</label>    
+                  <select id="fruit-select-2" name = "fruit">
+                      <option value="">Select One</option>
+                  </select><br>
+              <label for= "fruit-select-3"> Ingredient #3</label>    
+                  <select id="fruit-select-3" name = "fruit">
+                      <option value="">Select One</option>
+                  </select>
+              <label class="top"><textarea id="special" rows="5" cols="15" placeholder="Special Instructions"></textarea>Special Instructions:</label>
+              <input type="button" value="Save" id="submitbutton">
+          </fieldset>
       </form>
-      <br>
-      <section class="memberbenefit">
-        <div>
-          <h2>Non-Profit Membership</h2>
-          <p><strong>Price: </strong>$0</p>
-          <p>
-            <strong>Benefits: </strong>Monthly email and regular mail newsletter
-            updating you on what is happening on the island.
-          </p>
-        </div>
-
-        <div>
-          <h2>Bronze</h2>
-          <p><strong>Price: </strong>$20</p>
-          
-          <p>
-            <strong>Benefits: </strong>Monthly coupons for local dining, bars,
-            and social establishments plus everything in the Non-Profit
-            Membership
-          </p>
-        </div>
-
-        <div>
-          <h2>Silver</h2>
-          <p><strong>Price: </strong>$40</p>
-          
-          <p>
-            <strong>Benefits: </strong>Access to business tools, online
-            advertising, and a business consultant plus all of the benefits in
-            the lower two memberships
-          </p>
-        </div>
-
-        <div>
-          <h2>Gold</h2>
-          <p><strong>Price: </strong>$80</p>
-          
-          <p>
-            <strong>Benefits: </strong>Unlimited advertising within Melbourne
-            limits, unlimited online advertising and a team of business
-            consultants plus all of the benefits in the lower three memberships
-          </p>
-        </div>
-      </section>
-    </main>
+      <div id="drinkcount"></div>
+  </main> -->
+  <main class="fresh-main">
+    <h2>Add Your Own Recipe!</h2>
+    <form id="drink-form">
+        <fieldset>
+            <legend>Your Details</legend>
+            <label class="top">First Name*: <input id="name" type="text" required></label>
+            <label class="top">Email*: <input id="email" type="email" required></label>
+            <label class="top">Phone Number*: <input id="phone" type="tel" required></label>
+        </fieldset>
+        <fieldset>
+            <h2>Select your fillings</h2>
+            <legend>Ingredients</legend>
+            <label for = "fruit-select-1"> What Fruit do you want?</label>
+                <select id="fruit-select-1" name = "fruit">
+                    <option value="">Select a fruit</option>
+                </select> <br>
+            <label for= "fruit-select-2"> Select another Fruit?</label>    
+                <select id="fruit-select-2" name = "fruit">
+                    <option value="">Select another fruit</option>
+                </select><br>
+            <label for= "fruit-select-3"> Select another Fruit?</label>    
+                <select id="fruit-select-3" name = "fruit">
+                    <option value="">Select yet another fruit</option>
+                </select>
+            <label class="top"><textarea id="special" rows="5" cols="15" placeholder="Special Instructions"></textarea>Special Instructions:</label>
+            <input type="button" value="Save" id="submitbutton">
+        </fieldset>
+    </form>
+    <div id="drinkcount"></div>
+    <section id="drinks">
+      <h2>Drink Counter</h2>
+      <div id="made"># of Drinks made</div>
+    </section>
+</main>
 
     <footer>
       <img
         class="footer-logo"
-        src="images/transparentlogo.webp"
-        alt="Melbourne Chamber Logo"
+        src="images/logo.png"
+        alt="Paleo f(x) Logo"
       >
       <div class="title-address">
-        <h2>Melbourne Chamber of Commerce</h2>
-        <h3>99 imaginary rd.<br>Melbourne, Fl 64325</h3>
+        <h2>Paleo f(x)</h2>
+        <h3>510 E St. Elmo Rd. A3 <br>Austin, TX 78745</h3>
       </div>
       <div class="epl">
-        <h3>info@melbournechamber.org</h3>
+        <h3>info@paleofx.org</h3>
         <h3>(321) 707-5466</h3>
-        <h3>📌Location <a href="https://goo.gl/maps/UF2NE1tvep5TV8G86">Map</a></h3>
+        <h3>📌Location <a href="https://goo.gl/maps/z9wGrj6DjYhdQHWi8">Map</a></h3>
       </div>
       <br >
 
       <p class="base-footer">
-        &copy; <span id="year"></span> Melbourne Chamber | Caitlyn Schmidt| WDD
-        230 Project
+        &copy; <span id="year"></span> Paleo f(x) | Caitlyn Schmidt| WDD
+        330 Project
       </p>
       <br >
       <p class="last-updated">Last Updated: <span id="lastModified"></span></p>
@@ -210,7 +144,12 @@
     <script src="scripts/javascript.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/fulldate.js"></script>
-    <script src="scripts/banner.js"></script> 
-    <script src="scripts/hidden.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/weatherapi.js"></script>
+    <script src="scripts/fruitinfo.js"></script>
+    <script src="scripts/drinks.js"></script>
+
+    
+    
   </body>
 </html>

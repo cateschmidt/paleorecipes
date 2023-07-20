@@ -158,39 +158,7 @@ h3 {
   .container .btn:hover {
     background-color: #47D9BF;
   }
-.event {
-    height: 300px;
-}
 
-.spotlights {
-    background-color: white;
-    height: 605px;
-}
-.spotlight1 {
-    border:1px solid #003056; 
-    height: 295px;  
-}
-.transportimage {
-    width: 40%;
-    display: block;
-    margin: auto;
-}
-.spotlight2 {
-    border: 1px solid #003056;
-    height: 295px;
-}
-.tykesimage {
-    width: 40%;
-    display:block;
-    margin: auto;
-}
-.news {
-  height: 300px;
-}
-.spotlight3 {
-    display: none;
-    border: 1px solid #003056;
-}
 .weather {
   height: 300px;
 }
@@ -204,9 +172,6 @@ h3 {
   margin: auto;
   
 }
-
-
-
 
 /* *********************************************** */
 /* Footer styling */
@@ -365,122 +330,57 @@ footer p {
     
   }
   
-  /* **************************************************** */
-/* Join Page Styling */
-.joinh1 {
-  margin: auto;
-  color: #003056  ;
+/* Search page styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
   text-align: center;
-  width: 75%;
-  border-radius: 0.5rem;
-  padding: 0px;
-  font-family:'kavoon';
 }
 
-.congrats {
-  color: #003056;
-  padding: 20px 20px;
-  font-size: 1.5rem;
-  margin: auto;
-  font-family:'kavoon';
-  
-  
-}
-.thanks-content p {
-  padding: 70px 10px; 
-  font-size: 1.5rem;
-  margin: auto;
-  font-family:'mulish';
-  
+h1 {
+  margin: 0;
 }
 
-form fieldset {
-  margin: auto;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 10px 10px;
-  background-color: lightgray;
-  width: 50%;
-  font-family:'mulish';
-}
-form legend {
-  color: #003056;
-  margin: 0 1rem;
-  padding: 0 0.5rem;
-  font-size: 1.5rem;
-  font-family:'mulish';
-}
-form label.user-info, form label.business, form div  {
-  display: block;
-  padding-top: 1rem;
-  color: #003056;
-}
-form label.user-info input, form label.business input{
-  display: block;
-  font-size: 1rem;
-  border: solid 1px black;
-  border-radius: 5px;
-  padding: 0.75rem 0;
-  color: #00A1D9;
-  width: 20rem;
-  
-
-}
-form label.member {
-  display: block;
-  padding: 0.75rem 0;
-  color: #003056;
-}
-form input.submitButton {
-  display: block;
-  margin: auto;
-  border: none;
-  background-color: lightgrey;
-  border: 1px solid black;
-  color: #003056;
-  border-radius: 0.5rem;
+.search-container {
   margin-top: 20px;
-  padding: 0.75rem 1.5rem;
-  width: 60%;
-  max-width: 20rem;
-  font-size: 0.90rem;
-  font-family:'mulish';
-}
-form label.user-info input:required {
-  border-left: red solid 6px;
-}
-form label.user-info input:required:valid {
-  border-left: green solid 6px;
-}
-form label.business input:required {
-  border-left: red solid 6px;
-}
-form label.business input:required:valid {
-  border-left: green solid 6px;
+  display: flex;
+  justify-content: center;
 }
 
-.joinform section {
-  margin: auto 30px;
-  border: solid 1px black;
-  border-radius: 10px;  
-  
+input {
+  padding: 5px;
+  margin-right: 10px;
 }
-.memberbenefit {
-  background-color: lightgray;
-  width: 80%;
-  font-family:'mulish';
+
+button {
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  cursor: pointer;
 }
-.memberbenefit div {
-  margin: 10px 10px;
-  padding: 20px 20px;
-  border: solid 1px #00A1D9;
+
+main {
+  padding: 20px;
 }
-form label.business textarea {
-  width: 95%; 
-  height: 3rem;
+
+ul {
+  list-style: none;
+  padding: 0;
 }
-  
-/* *************************************** */
+
+li {
+  margin-bottom: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
 /* Directory Page styling */
 .directory #content {
   margin: auto;
