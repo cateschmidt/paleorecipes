@@ -51,20 +51,11 @@ function displayCards(business) {
     h2.textContent = business.name;
     card.appendChild(h2);
 
-    // Business Type
-    let type = document.createElement('p');
-    type.textContent = business.type;
-    card.appendChild(type);
-
     // Business Address
     let address = document.createElement('p');
-    address.textContent = business.location.address1 + ' ' + ' ' + business.location.city + ', ' + business.location.state + ' ' + business.location.zip_code;
+    address.textContent = business.ingredients.one + ' ' + ' ' + business.ingredients.two + ', ' + business.ingredients.three + ' ' + business.ingredients.four;
     card.appendChild(address);
 
-    // Business Phone
-    let phone = document.createElement('p');
-    phone.textContent = business.phone;
-    card.appendChild(phone);
 
     // Business Website
     let website = document.createElement('a');
@@ -84,20 +75,10 @@ function displayTable(business) {
     name.textContent = business.name;
     tableRow.appendChild(name);
 
-    // Business Type
-    let type = document.createElement('td');
-    type.textContent = business.type;
-    tableRow.appendChild(type);
-
     // Business Address
     let address = document.createElement('td');
-    address.textContent = business.location.address1 + ' ' + ' ' + business.location.city + ', ' + business.location.state + ' ' + business.location.zip_code;
+    address.textContent = business.ingredients.one + ' ' + ' ' + business.ingredients.two + ', ' + business.ingredients.three + ' ' + business.ingredients.four;
     tableRow.appendChild(address);
-
-    // Business Phone
-    let phone = document.createElement('td');
-    phone.textContent = business.phone;
-    tableRow.appendChild(phone);
 
     // Business Website
     let website = document.createElement('td');

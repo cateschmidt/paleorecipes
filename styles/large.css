@@ -87,28 +87,6 @@
     margin: auto;
 }
 
-
-/* ********************************* */
-/* Discovery Page Styling */
-
-.cultureimage {
-    width: 80%;
-}
-.beachimage {
-    width: 80%;
-}
-.tourimage {
-    width: 80%;
-}
-.staysimage {
-    width: 80%;
-}
-.diningimage {
-    width: 80%;
-}
-
-
-/* ************************ */
 /* Directory Page Styling */
 tr td {
     display: table-cell;

@@ -2,14 +2,12 @@
     "businesses": [
         {
             "name": "Broadway Bound Dance Centre",
-            "type": "Arts, Culture & Entertainment",
-            "location": {
-                "address1": "2955 Bush Drive",
-                "city": "Melbourne",
-                "state": "FL",
-                "zip_code": "32901"
+            "ingredients": {
+                "one": "2955 Bush Drive",
+                "two": "Melbourne",
+                "three": "FL",
+                "four": "32901"
             },
-            "phone": "321-259-4778",
             "website": "https://www.broadwaybounddancemelbourne.com/",
             "logo": "images/directory/broadway.jpg"
         },
