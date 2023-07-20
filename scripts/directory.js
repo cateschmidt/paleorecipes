@@ -1,4 +1,4 @@
-const requestURL = 'https://cateschmidt.github.io/paleorecipes/data.json';
+const requestURL = 'https://cateschmidt.github.io/paleorecipes/data.json ';
 const list = document.querySelector('#list');
 const table = document.querySelector('.table');
 const grid = document.querySelector('#grid');
@@ -11,25 +11,25 @@ async function getData(requestURL) {
     if (response.ok) {
         const data = await response.json();
         // console.log(data);
-        const recipes = data['recipes'];
+        const businesses = data['businesses'];
 
-        recipes.forEach(recipe => {
-            displayCards(recipe);
+        businesses.forEach(business => {
+            displayCards(business);
         });
         
         list.addEventListener('click', () => {
             table.innerHTML = '';
             cards.innerHTML = '';
-            recipes.forEach(recipe => {
-                displayTable(recipe);
+            businesses.forEach(business => {
+                displayTable(business);
             });
         });
 
         grid.addEventListener('click', () => {
             table.innerHTML = '';
             cards.innerHTML = '';
-            recipes.forEach(recipe => {
-                displayCards(recipe);
+            businesses.forEach(business => {
+                displayCards(business);
             });
         });
     }
@@ -37,30 +37,38 @@ async function getData(requestURL) {
 
 getData(requestURL);
 
-function displayCards(recipe) {
+function displayCards(business) {
     let card = document.createElement('section');
 
-    // recipe Image
+    // Business Image
     let image = document.createElement('img');
-    image.setAttribute('src', recipe.logo);
-    image.setAttribute('alt', `${recipe.name} Logo`);
+    image.setAttribute('src', business.logo);
+    image.setAttribute('alt', `${business.name} Logo`);
     card.appendChild(image);
     
-    // Recipe Name
+    // Business Name
     let h2 = document.createElement('h2');
-    h2.textContent = recipe.name;
+    h2.textContent = business.name;
     card.appendChild(h2);
 
+    // Business Type
+    let type = document.createElement('p');
+    type.textContent = business.type;
+    card.appendChild(type);
 
-    // Ingredients
-    let ingredients = document.createElement('p');
-    address.textContent = recipe.ingredients.one + ' ' + ' ' + recipe.ingredients.two + ', ' + recipe.ingredients.three + ' ' + recipe.ingredients.four;
-    card.appendChild(ingredients);
+    // Business Address
+    let address = document.createElement('p');
+    address.textContent = business.location.address1 + ' ' + ' ' + business.location.city + ', ' + business.location.state + ' ' + business.location.zip_code;
+    card.appendChild(address);
 
+    // Business Phone
+    let phone = document.createElement('p');
+    phone.textContent = business.phone;
+    card.appendChild(phone);
 
-    // Recipe Website
+    // Business Website
     let website = document.createElement('a');
-    website.setAttribute('href', recipe.website);
+    website.setAttribute('href', business.website);
     website.textContent = 'Website';
     card.appendChild(website);
 
@@ -68,23 +76,32 @@ function displayCards(recipe) {
     document.querySelector('div.cards').appendChild(card);
 }
 
-function displayTable(recipe) {
+function displayTable(business) {
     let tableRow = document.createElement('tr');
 
-    // Recipe Name
+    // Business Name
     let name = document.createElement('td');
-    name.textContent = recipe.name;
+    name.textContent = business.name;
     tableRow.appendChild(name);
 
+    // Business Type
+    let type = document.createElement('td');
+    type.textContent = business.type;
+    tableRow.appendChild(type);
 
-    // Ingredients
-    let ingredients = document.createElement('td');
-    address.textContent = recipe.ingredients.one + ' ' + ' ' + recipe.ingredients.two + ', ' + recipe.ingredients.three + ' ' + recipe.ingredients.four;
-    tableRow.appendChild(ingredients);
+    // Business Address
+    let address = document.createElement('td');
+    address.textContent = business.location.address1 + ' ' + ' ' + business.location.city + ', ' + business.location.state + ' ' + business.location.zip_code;
+    tableRow.appendChild(address);
 
-    // Recipe Website
+    // Business Phone
+    let phone = document.createElement('td');
+    phone.textContent = business.phone;
+    tableRow.appendChild(phone);
+
+    // Business Website
     let website = document.createElement('td');
-    website.innerHTML = `<a href="${recipe.website}">Website</a>`;
+    website.innerHTML = `<a href="${business.website}">Website</a>`;
     tableRow.appendChild(website);
 
     document.querySelector('table').appendChild(tableRow);
