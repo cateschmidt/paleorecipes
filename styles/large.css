@@ -46,46 +46,6 @@
     grid-row:3/4;
     grid-column:1/2;
 }
-.news {
-    grid-row: 3/4;
-    grid-column: 2/4;
-}
-
-.spotlights {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-row: 1/4;
-    grid-column: 4/4;
-    height: 935px;
-    padding: 10px 10px 0;
-    
-    
-}
-.spotlight1 {
-    height: 295px;
-}
-.transportimage {
-    width: 100px;
-}
-.spotlight2 {
-    grid-row:2/3;
-    grid-column: 1/2;
-    height: 295px;
-}
-.tykesimage {
-    width: 100px;
-}
-.spotlight3 {
-    display: block;
-    grid-row: 3/3;
-    height: 295px;
-}
-.shopimage {
-    width: 100px;
-    display: block;
-    margin: auto;
-}
 
 /* Directory Page Styling */
 tr td {
