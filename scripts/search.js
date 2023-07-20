@@ -1,7 +1,4 @@
 function searchRecipes() {
-    cd-nutrition-v1.p.rapidapi.com';
-    const searchQuery = document.getElementById('searchInput').value;onst apiKey = '0fe6fb2ebbmshcddd096128512b3p1d1072jsnc2c4cbec714e';
-    const apiHost = 'spoonacular-recipe-foo
 
     const url = 'https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&tags=under_30_minutes';
 
@@ -25,7 +22,7 @@ function searchRecipes() {
         console.error('Error fetching data:', error);
     });
 }
-
+console.log("You are here");
 function displayResults(results) {
     const resultList = document.getElementById('results');
     resultList.innerHTML = '';
