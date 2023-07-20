@@ -420,44 +420,104 @@ tr td {
   display: block;
 }
 
-.wireframes a {
-  display: flex;
-  flex-direction: row;
-  background-color: white;
-  border: 1px solid #003056; 
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 130px;
+
+/* Add Recipe Page Styling */
+/* Fresh Page Styling */
+#drinks {
+	padding: 20px;
+}
+#drinks h2 {
+	font-size: 2rem;
+	font-family: 'Abril Fatface', cursive;
+}
+.drink-info {
+	color: darkgreen;
+	border: 1px solid black;
+	border-radius:10px;
+	padding: 20px;
+	margin: 20px;
+	font-family: 'Timmana', sans-serif;
+
 
 }
 
-.wireframes a:hover {
-  background-color: lightgray;
-  cursor: pointer;
-  
+/* Fresh Page Styling */
+fresh-main {
+    display: block;
 }
 
-/* Contact Page Styling */
-.chamber-info {
-  color: #003056; 
-  border: 1px solid black;
-  width: 70%;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 20px auto;
-  display: block;
-  overflow-wrap:break-word;
-  
+.fresh-main  h2 {
+    text-align: center;
+    margin-bottom: 50px;
+	font-family: 'Abril Fatface', cursive;
+	color: darkgreen;
 }
-.chamber-info h3 {
-  font-family:'mulish';
+
+.fresh-main form  {
+    border: 2px solid #000000;
+	box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 35px;
+    color: darkgreen;
+    padding: 15px 15px;
+    font-size: 1.2rem;
+    background-color: #f2f2f2;
+    margin: 20px;
 }
-.chamber-info h2 {
-  font-family:'kavoon';
+
+.fresh-main form label, input, select {
+    display: block;
+    margin: 8px 0 20px 0;
 }
-.chamber-info iframe {
-  max-width: 100%;
+
+.fresh-main form input {
+    padding: .65rem;
+    border-radius: 10px;
+    /* background-color: #000000; */
+}
+
+.fresh-main select {
+    padding: .55rem;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.fresh-main form textarea {
+    width: 90%;
+    height: 100px;
+    margin-top: 10px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+#submitbutton {
+    background-color: lightblue;
+    color: #048C66;
+}
+
+#submitted-output {
+    display: none;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px auto;
+    background-color: #f2f2f2;
+	font-family: ariel;
+}
+
+#submitted-output h2 {
+    border-bottom: 1px solid #000000;
+}
+#drinks {
+  border: 2px solid #000000;
+	box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 35px;
+    color: darkgreen;
+    padding: 15px 15px;
+    font-size: 1.2rem;
+    background-color: #f2f2f2;
+    margin: 20px;
+    
+
 }
 
 

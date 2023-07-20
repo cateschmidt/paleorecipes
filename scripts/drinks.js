@@ -1,6 +1,6 @@
 function updateDrinkCount() {
-    if (localStorage.drinksMixed) {
-        const drinksMixed = localStorage.drinksMixed;
+    if (localStorage.recipesAdded) {
+        const drinksMixed = localStorage.recipesAdded;
         document.querySelector("#made").innerHTML = `You have added <strong>${drinksMixed}</strong> recipes.`;
     }
     else {

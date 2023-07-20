@@ -1,38 +1,48 @@
-function searchRecipes() {
+function searchAPI() {
+    // Replace 'YOUR_API_KEY' with your actual API key
+    const apiKey = '885df697b4d74128965416cb5f9519f3';
+    const searchQuery = document.getElementById('searchInput').value;
 
-    const url = 'https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&tags=under_30_minutes';
+    // Replace 'API_ENDPOINT' with the actual API endpoint for your external API
+    const url = `https://api.spoonacular.com/recipes/complexSearch?query=${encodeURIComponent(searchQuery)}&apikey=${apiKey}`;
 
-    fetch(url, {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': '0fe6fb2ebbmshcddd096128512b3p1d1072jsnc2c4cbec714e',
-            'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
-        }
-    })
-    .then(response => {
-        if (response.ok) {
-            displayResults(data.results);
+    fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
             return response.json();
-        }
-    
-        else (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        
-    })
-    .then(data => {
-        displayResults(data.results);
-    })
-       
+        })
+        .then(data => {
+            displayResults(data);
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
 }
-console.log("You are here");
-function displayResults(results) {
-    const resultList = document.getElementById('results');
-    resultList.innerHTML = '';
 
-    results.forEach(recipe => {
-        const li = document.createElement('li');
-        li.textContent = recipe.title;
-        resultList.appendChild(li);
+function displayResults(data) {
+    const resultsDiv = document.getElementById('results');
+    resultsDiv.innerHTML = '';
+
+    data.forEach(item => {
+        const div = document.createElement('div');
+        div.classList.add('result-item');
+
+        const image = document.createElement('img');
+        image.src = item.image;
+        div.appendChild(image);
+
+        const name = document.createElement('h2');
+        name.textContent = item.name;
+        div.appendChild(name);
+
+        const websiteLink = document.createElement('a');
+        websiteLink.textContent = 'Visit Website';
+        websiteLink.href = item.website;
+        websiteLink.target = '_blank';
+        div.appendChild(websiteLink);
+
+        resultsDiv.appendChild(div);
     });
 }

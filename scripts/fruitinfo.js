@@ -58,9 +58,9 @@ async function queryFruit(){
           }).format(Date.now());
         
         drinkOut.innerHTML = `<section class = "drink-info">
-            <div><strong>${document.querySelector("#name").value}</strong></div>
-            <div>${document.querySelector("#phone").value}</div>
-            <div>${document.querySelector("#email").value}</div>
+            <div><strong> You added the following Recipe: </strong></div>
+            <div>${document.querySelector("#name").value}</div>
+            <div>${document.querySelector("#url").value}</div>
             <div id="fruitnames">
             <span></span><span>${fruitName1}</span> - <span>${fruitName2}</span> - <span>${fruitName3}</span>
             </div>
@@ -72,13 +72,13 @@ async function queryFruit(){
             <span>Calories</span><span>${Math.floor(calories)}</span>
             </div>
             <div>${document.querySelector("#special").value}</div>
-            <div>Order Date: ${dateStamp}</div>
+            <div>Date added: ${dateStamp}</div>
             </section>`;
-        if (localStorage.drinksMixed) {
-            localStorage.drinksMixed = parseInt(localStorage.drinksMixed) + 1;
+        if (localStorage.recipesAdded) {
+            localStorage.recipesAdded = parseInt(localStorage.recipesAdded) + 1;
         }
         else {
-            localStorage.drinksMixed = 1;
+            localStorage.recipesAdded = 1;
           }
           updateDrinkCount();
         }

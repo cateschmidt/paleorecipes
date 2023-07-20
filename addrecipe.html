@@ -56,34 +56,36 @@
     <form id="drink-form">
         <fieldset>
             <legend>Your Details</legend>
-            <label class="top">First Name*: <input id="name" type="text" required></label>
-            <label class="top">Email*: <input id="email" type="email" required></label>
-            <label class="top">Phone Number*: <input id="phone" type="tel" required></label>
+            <label class="top">Recipe Name*: <input id="name" type="text" required></label>
+            <label class="top">Website*: <input id="url" type="text" placeholder="www.example.com" required></label>
         </fieldset>
         <fieldset>
-            <h2>Select your fillings</h2>
+            <h2>Select the Ingredients</h2>
             <legend>Ingredients</legend>
-            <label for = "fruit-select-1"> What Fruit do you want?</label>
+            <label for = "fruit-select-1"> Ingredient #1</label>
                 <select id="fruit-select-1" name = "fruit">
-                    <option value="">Select a fruit</option>
+                    <option value="">Select One</option>
                 </select> <br>
-            <label for= "fruit-select-2"> Select another Fruit?</label>    
+            <label for= "fruit-select-2"> Ingredient #2</label>    
                 <select id="fruit-select-2" name = "fruit">
-                    <option value="">Select another fruit</option>
+                    <option value="">Select One</option>
                 </select><br>
-            <label for= "fruit-select-3"> Select another Fruit?</label>    
+            <label for= "fruit-select-3"> Ingredient #3</label>    
                 <select id="fruit-select-3" name = "fruit">
-                    <option value="">Select yet another fruit</option>
+                    <option value="">Select One</option>
                 </select>
             <label class="top"><textarea id="special" rows="5" cols="15" placeholder="Special Instructions"></textarea>Special Instructions:</label>
             <input type="button" value="Save" id="submitbutton">
         </fieldset>
     </form>
     <div id="drinkcount"></div>
+
     <section id="drinks">
-      <h2>Drink Counter</h2>
-      <div id="made"># of Drinks made</div>
+      <h2>Recipe Counter</h2>
+      <div id="made"># of Recipes Added</div>
     </section>
+  </section>
+
 </main>
 
     <footer>
