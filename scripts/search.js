@@ -4,20 +4,12 @@ function searchAPI() {
     const searchQuery = document.getElementById('searchInput').value;
 
     // Replace 'API_ENDPOINT' with the actual API endpoint for your external API
-    const url = `https://api.spoonacular.com/recipes/complexSearch?query=${(searchQuery)}&apikey=${apiKey}`;
+    const url = `https://api.spoonacular.com/recipes/findByIngredients?query=${encodeURIComponent(searchQuery)}&apikey=${apiKey}`;
 
     fetch(url)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
+        .then(response => response.json())
         .then(data => {
             displayResults(data);
-        })
-        .catch(error => {
-            console.error('Error fetching data:', error);
         });
 }
 
