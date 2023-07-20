@@ -4,7 +4,7 @@ function searchAPI() {
     const searchQuery = document.getElementById('searchInput').value;
 
     // Replace 'API_ENDPOINT' with the actual API endpoint for your external API
-    const url = `https://api.spoonacular.com/recipes/findByIngredients?query=${encodeURIComponent(searchQuery)}&apikey=${apiKey}`;
+    const url = `https://api.spoonacular.com/recipes/findByIngredients/search?query=${encodeURIComponent(searchQuery)}&apikey=${apiKey}`;
 
     fetch(url)
         .then(response => response.json())
