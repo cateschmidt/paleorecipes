@@ -10,17 +10,20 @@ function searchRecipes() {
         }
     })
     .then(response => {
-        if (!response.ok) {
+        if (response.ok) {
+            displayResults(data.results);
+            return response.json();
+        }
+    
+        else (!response.ok) {
             throw new Error('Network response was not ok');
         }
-        return response.json();
+        
     })
     .then(data => {
         displayResults(data.results);
     })
-    .catch(error => {
-        console.error('Error fetching data:', error);
-    });
+       
 }
 console.log("You are here");
 function displayResults(results) {
