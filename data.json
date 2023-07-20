@@ -3,101 +3,101 @@
         {
             "name": "Hamburger and Fries",
             "ingredients": {
-                "one": "ground beef",
+                "one": "ground beef,",
                 "two": "5 russet potatoes",
-                "three": "worcestershire sauce",
+                "three": "worcestershire sauce,",
                 "four": "1 medium onion"
             },
-            "website": "https://www.broadwaybounddancemelbourne.com/",
-            "logo": "images/directory/broadway.jpg"
+            "website": "https://realsimplegood.com/paleo-burgers/",
+            "logo": "images/directory/burger.webp"
         },
         {
             "name": "Chicken Noodle Soup", 
             "ingredients": {
-                "one": "chicken breast",
+                "one": "chicken breast,",
                 "two": "chicken broth",
-                "three": "carrots",
+                "three": "carrots,",
                 "four": "onion"
             },
-            "website": "https://fifthavenueartgallery.com/",
-            "logo": "images/directory/fifthavenue.jpg"
+            "website": "https://foodbornewellness.com/paleo-chicken-noodle-soup/",
+            "logo": "images/directory/chickennoodle.jpg"
         },
         {
             "name": "Pina Colada Fruit Salad",
             "ingredients": {
-                "one": "Whipping Cream",
+                "one": "Whipping Cream,",
                 "two": "Pineapple",
-                "three": "Coconut",
+                "three": "Coconut,",
                 "four": "Walnuts"
             },
-            "website": "https://getfireduppottery.com/",
-            "logo": "images/directory/getfiredup.jpg"
+            "website": "https://deliciousmadeeasy.com/2015/05/pina-colada-fruit-salad/",
+            "logo": "images/directory/fruitsalad.jpg"
         },
         {
             "name": "Spaghetti and Meatballs",
             "ingredients": {
-                "one": "ground beef",
+                "one": "ground beef,",
                 "two": "spaghetti noodles",
-                "three": "tomatoe sauce",
+                "three": "tomatoe sauce,",
                 "four": "italian seasoning"
             },
-            "website": "15 W. Hibiscus Blvd",
-            "logo": "images/directory/gattos.png"
+            "website": "https://againstallgrain.com/2015/01/06/paleo-spaghetti-and-meatballs/",
+            "logo": "images/directory/meatballs.jpg"
         },
         {
             "name": "Pizza",
             "ingredients": {
-                "one": "gluten free crust",
+                "one": "gluten free crust,",
                 "two": "tomato sauce",
-                "three": "uncured pepperoni",
+                "three": "uncured pepperoni,",
                 "four": "red peppers"
             },
-            "website": "https://spacecoastcartrentals.com/",
-            "logo": "images/directory/cartrentals.png"
+            "website": "https://glutenfreeonashoestring.com/paleo-pizza/",
+            "logo": "images/directory/pizza.webp"
         },
         {
             "name": "Chicken Salad",
             "ingredients": {
-                "one": "Chicken breast, cooked",
+                "one": "Chicken breast, cooked,",
                 "two": "cherry tomatoes",
-                "three": "cucumber",
+                "three": "cucumber,",
                 "four": "dressing"
             },
-            "website": "https://www.haveabeachweddinginflorida.com/",
-            "logo": "images/directory/wedding.jpg"
+            "website": "https://paleoglutenfree.com/recipes/whole30-balsamic-grilled-chicken-salad/",
+            "logo": "images/directory/chickensalad.jpg"
         },
         {
             "name": "Roasted Salmon and vegetables",
             "ingredients": {
-                "one": "Salmon",
+                "one": "Salmon,",
                 "two": "Sweet potatoes",
-                "three": "bell peppers",
+                "three": "bell peppers,",
                 "four": "brussel sprouts"
             },
-            "website": "https://www.bonefishwillys.com/",
-            "logo": "images/directory/bonefish.png"
+            "website": "https://therealfooddietitians.com/one-pan-salmon-and-veggie-bake/",
+            "logo": "images/directory/salmon.jpg"
         },
         {
             "name": "Icecream",
             "ingredients": {
-                "one": "almond milk",
+                "one": "almond milk,",
                 "two": "coconut sugar",
-                "three": "vanilla bean",
+                "three": "vanilla bean,",
                 "four": "cocoa powder"
             },
-            "website": "https://www.einsteinbros.com/",
-            "logo": "images/directory/einstein.png"
+            "website": "https://lowcarbyum.com/homemade-almond-milk-ice-cream/",
+            "logo": "images/directory/icecream.jpg"
         },
         {
             "name": "Sweet Potatoe Chips",
             "ingredients": {
-                "one": "sweet potatoes",
+                "one": "sweet potatoes,",
                 "two": "salt",
-                "three": "olive oil",
+                "three": "olive oil,",
                 "four": "garlic powder"
             },
-            "website": "https://www.bemenatural.com/",
-            "logo": "images/directory/beme.webp"
+            "website": "https://www.aspicyperspective.com/baked-sweet-potato-chips/",
+            "logo": "images/directory/chips/webp"
         }
         
     ]
