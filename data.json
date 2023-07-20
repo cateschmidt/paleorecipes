@@ -1,109 +1,93 @@
 {
-    "businesses": [
+    "recipes": [
      
         { 
             "name": "Fifth Avenue Art Gallery", 
-            "type": "Arts, Culture & Entertainment",
-            "location": {
-                "address1": "1470 Highland Avenue",
-                "city": "Melbourne",
-                "state": "FL",
-                "zip_code": "32935"
+            "ingredients": {
+                "one": "1470 Highland Avenue",
+                "two": "Melbourne",
+                "three": "FL",
+                "four": "32935"
             },
-            "phone": "321-259-8261",
             "website": "https://fifthavenueartgallery.com/",
             "logo": "images/directory/fifthavenue.jpg"
         },
-        {
-            "name": "Get Fired up Pottery",
-            "type": "Arts, Culture & Entertainment",
-            "location": {
-                "address1": "536 East New Haven Avenue",
-                "city": "Melbourne",
-                "state": "FL",
-                "zip_code": "32901"
+        { 
+            "name": "Fifth Avenue Art Gallery", 
+            "ingredients": {
+                "one": "1470 Highland Avenue",
+                "two": "Melbourne",
+                "three": "FL",
+                "four": "32935"
             },
-            "phone": "321-729-0222",
-            "website": "https://getfireduppottery.com/",
-            "logo": "images/directory/getfiredup.jpg"
+            "website": "https://fifthavenueartgallery.com/",
+            "logo": "images/directory/fifthavenue.jpg"
         },
-        {
-            "name": "Gatto's Tires & Auto Service",
-            "type": "Auto Sales & Service",
-            "location": {
-                "address1": "15 W. Hibiscus Blvd",
-                "city": "Melbourne",
-                "state": "FL",
-                "zip_code": "32901"
+        { 
+            "name": "Fifth Avenue Art Gallery", 
+            "ingredients": {
+                "one": "1470 Highland Avenue",
+                "two": "Melbourne",
+                "three": "FL",
+                "four": "32935"
             },
-            "phone": "123-456-7890",
-            "website": "15 W. Hibiscus Blvd",
-            "logo": "images/directory/gattos.png"
+            "website": "https://fifthavenueartgallery.com/",
+            "logo": "images/directory/fifthavenue.jpg"
         },
-        {
-            "name": "Space Coast Cart Rentals",
-            "type": "Auto Sales & Service",
-            "location": {
-                "address1": "3665 W. New Haven Ave.",
-                "city": "Melbourne",
-                "state": "FL",
-                "zip_code": "32904"
+        { 
+            "name": "Fifth Avenue Art Gallery", 
+            "ingredients": {
+                "one": "1470 Highland Avenue",
+                "two": "Melbourne",
+                "three": "FL",
+                "four": "32935"
             },
-            "phone": "321-477-3080",
-            "website": "https://spacecoastcartrentals.com/",
-            "logo": "images/directory/cartrentals.png"
+            "website": "https://fifthavenueartgallery.com/",
+            "logo": "images/directory/fifthavenue.jpg"
         },
-        {
-            "name": "Love is a Beach Wedding",
-            "type": "Bridal & Wedding",
-            "location": {
-                "address1": "2018 Melbourne Court, #201",
-                "city": "Melbourne",
-                "state": "FL",
-                "zip_code": "32901"
+        { 
+            "name": "Fifth Avenue Art Gallery", 
+            "ingredients": {
+                "one": "1470 Highland Avenue",
+                "two": "Melbourne",
+                "three": "FL",
+                "four": "32935"
             },
-            "phone": "321-951-1588",
-            "website": "https://www.haveabeachweddinginflorida.com/",
-            "logo": "images/directory/wedding.jpg"
+            "website": "https://fifthavenueartgallery.com/",
+            "logo": "images/directory/fifthavenue.jpg"
         },
-        {
-            "name": "Bonefish Willy’s Riverfront Grille",
-            "type": "Food, Restaurants and Nightlife",
-            "location": {
-                "address1": "2459 Pineapple Ave.",
-                "city": "Melbourne",
-                "state": "FL",
-                "zip_code": "32936"
+        { 
+            "name": "Fifth Avenue Art Gallery", 
+            "ingredients": {
+                "one": "1470 Highland Avenue",
+                "two": "Melbourne",
+                "three": "FL",
+                "four": "32935"
             },
-            "phone": "321-253-8888",
-            "website": "https://www.bonefishwillys.com/",
-            "logo": "images/directory/bonefish.png"
+            "website": "https://fifthavenueartgallery.com/",
+            "logo": "images/directory/fifthavenue.jpg"
         },
-        {
-            "name": "Einstein Brothers Bagels",
-            "type": "Food, Restaurants and Nightlife",
-            "location": {
-                "address1": "1511 S. Harbor City Blvd.",
-                "city": "Melbourne",
-                "state": "FL",
-                "zip_code": "32901"
+        { 
+            "name": "Fifth Avenue Art Gallery", 
+            "ingredients": {
+                "one": "1470 Highland Avenue",
+                "two": "Melbourne",
+                "three": "FL",
+                "four": "32935"
             },
-            "phone": "321-802-4587",
-            "website": "https://www.einsteinbros.com/",
-            "logo": "images/directory/einstein.png"
+            "website": "https://fifthavenueartgallery.com/",
+            "logo": "images/directory/fifthavenue.jpg"
         },
-        {
-            "name": "BeMe Natural",
-            "type": "Health & Wellness",
-            "location": {
-                "address1": "1700 W. New Haven Ave., Suite 659",
-                "city": "Melbourne",
-                "state": "FL",
-                "zip_code": "32904"
+        { 
+            "name": "Fifth Avenue Art Gallery", 
+            "ingredients": {
+                "one": "1470 Highland Avenue",
+                "two": "Melbourne",
+                "three": "FL",
+                "four": "32935"
             },
-            "phone": "321-693-4003",
-            "website": "https://www.bemenatural.com/",
-            "logo": "images/directory/beme.webp"
+            "website": "https://fifthavenueartgallery.com/",
+            "logo": "images/directory/fifthavenue.jpg"
         }
         
     ]
